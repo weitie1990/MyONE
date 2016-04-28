@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="main_dark">#ecebe9</color>
+    <color name="dark_gray">#55999999</color>
+    <color name="main_kuang">#3e6c9e</color>
+    <color name="two_text">#898989</color>
+    <color name="card_outline">#D0D0CE</color>
+    <color name="card_bg">#EBEBEB</color>
+      <color name="viewfinder_mask">#cb000000</color>
+      <color name="possible_result_points">#c0ffff00</color>
+    <color name="backgroud">#ffffff</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="red">#ffff0000</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="path_black">#ff333333</color>
+    <color name="lighter_gray">#ffcccccc</color>
+    <color name="light_gray">#ffbbbbbb</color>
+    <color name="med_gray">#ff999999</color>
+    <color name="gray">#ff666666</color>
+    <color name="beige">#fff1eee9</color>
+    <color name="light_light_gray">#ffdddddd</color>
+    <color name="overlay_bg">#7f000000</color>
+    <color name="menu_settings_header_text">#ffc9beaa</color>
+    <color name="activity_bg">#fffafafa</color>
+    <color name="feed_item_bg">#fff2eee8</color>
+    <color name="feed_item_track">#ffe8e4dd</color>
+    <color name="cover_track">#7fffffff</color>
+    <color name="feed_subtext">#ffaea9a1</color>
+
+    <color name="bubble_item_divider">#fff7f6f5</color>
+    <!-- <color name="bubble_item_divider">#DB7093</color>-->
+
+
+    <color name="cover_text_shadow">#7f000000</color>
+    <color name="cover_time_shadow">#7f000000</color>
+    <color name="qa_bar_text_shadow">#ff7f1a13</color>
+    <color name="page_subtext">#ffada9a0</color>
+    <color name="permalink_comment_send_text">#ff9fa2a6</color>
+    <color name="emotion_picker_deluxe_text">#ff757575</color>
+    <color name="nux_blue_shadow">#ff0b36b7</color>
+    <color name="clear">#00000000</color>
+    <color name="feed_comment_button_text">#ffaea9a1</color>
+    <color name="feed_comment_button_text_shadow">#fffcfbfa</color>
+    <color name="moment_dot_music">#ffee9920</color>
+    <color name="cpb_grey">#ffdedede</color>
+    <color name="cpb_blue">#ff0099cc</color>
+    <color name="cpb_blue_dark">#ff00719b</color>
+    <color name="cpb_red">#ffff4444</color>
+    <color name="cpb_red_dark">#ffcd3a3a</color>
+    <color name="cpb_green">#ff99cc00</color>
+    <color name="cpb_green_dark">#ff6d9b00</color>
+    <color name="cpb_white">@android:color/white</color>
+</resources>

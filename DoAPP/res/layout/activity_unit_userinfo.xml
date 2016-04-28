@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_dark"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/backgroud"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/message_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24px"
+            android:onClick="back"
+            android:src="@drawable/iv_main_back" />
+
+        <TextView
+            android:id="@+id/message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="单位资料"
+            android:textColor="@color/main_kuang"
+            android:textSize="60px" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/dark_gray" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+             android:padding="15px"
+            android:layout_margin="30px"
+            android:background="@drawable/view_shape"
+            >
+
+
+
+
+            <com.lanxiao.doapp.myView.MainSetItemView
+                android:id="@+id/ll_unit_shortname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:unitItemName="简    称" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3px"
+                android:background="@color/dark_gray" />
+
+            <com.lanxiao.doapp.myView.MainSetItemView
+                android:id="@+id/ll_unit_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:unitItemName="全    称" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3px"
+                android:background="@color/dark_gray" />
+
+            <com.lanxiao.doapp.myView.MainSetItemView
+                android:id="@+id/ll_unit_business"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:unitItemName="行    业" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3px"
+                android:background="@color/dark_gray" />
+
+            <com.lanxiao.doapp.myView.MainSetItemView
+                android:id="@+id/ll_unit_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:unitItemName="标    签" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3px"
+                android:background="@color/dark_gray" />
+
+            <com.lanxiao.doapp.myView.MainSetItemView
+                android:id="@+id/ll_unit_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:unitItemName="国    家" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3px"
+                android:background="@color/dark_gray" />
+
+            <com.lanxiao.doapp.myView.MainSetItemView
+                android:id="@+id/ll_unit_province"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:unitItemName="省" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3px"
+                android:background="@color/dark_gray" />
+
+            <com.lanxiao.doapp.myView.MainSetItemView
+                android:id="@+id/ll_unit_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:unitItemName="市" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3px"
+                android:background="@color/dark_gray" />
+
+            <com.lanxiao.doapp.myView.MainSetItemView
+                android:id="@+id/ll_unit_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:unitItemName="地    址" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3px"
+                android:background="@color/dark_gray" />
+
+            <com.lanxiao.doapp.myView.MainSetItemView
+                android:id="@+id/ll_unit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:unitItemName="邮    编" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3px"
+                android:background="@color/dark_gray" />
+
+            <com.lanxiao.doapp.myView.MainSetItemView
+                android:id="@+id/ll_unit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:unitItemName="电    话" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3px"
+                android:background="@color/dark_gray" />
+
+            <com.lanxiao.doapp.myView.MainSetItemView
+                android:id="@+id/ll_unit_fax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:unitItemName="传    真" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3px"
+                android:background="@color/dark_gray" />
+
+            <com.lanxiao.doapp.myView.MainSetItemView
+                android:id="@+id/ll_unit_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:unitItemName="网    址" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3px"
+                android:background="@color/dark_gray" />
+            <com.lanxiao.doapp.myView.MainSetItemView
+                android:id="@+id/ll_unit_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:unitItemName="退出公司" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3px"
+                android:background="@color/dark_gray" />
+
+        </LinearLayout>
+</LinearLayout>

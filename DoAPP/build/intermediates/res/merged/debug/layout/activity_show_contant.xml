@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/backgroud"
+        android:gravity="center_vertical" >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iv_main_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:onClick="back"
+            />
+
+        <TextView
+            android:id="@+id/contant_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="同事"
+            android:textColor="@color/main_kuang"
+            android:textSize="60px" />
+        <Button
+            android:id="@+id/bt_contant_ok"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:text="确定"
+            android:textColor="@color/main_kuang"
+            android:background="@drawable/btn_main_selector"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+    <View
+        android:id="@+id/lines"
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/dark_gray"
+        android:layout_below="@+id/relativelayout"
+        />
+    <ListView
+        android:id="@+id/content_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lines"
+        >
+
+    </ListView>
+    <com.easemob.easeui.widget.EaseSidebar
+        android:id="@+id/sidebar"
+        android:layout_width="45px"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:layout_below="@+id/lines"
+        />
+
+    <TextView
+        android:id="@+id/floating_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ease_show_head_toast_bg"
+        android:gravity="center"
+        android:paddingLeft="75px"
+        android:paddingRight="75px"
+        android:textColor="@android:color/white"
+        android:textSize="120px"
+        android:visibility="invisible" />
+</RelativeLayout>
+<!-- From: file:/C:/Users/Thinkpad/Desktop/takepic/MyApplication/DoAPP/res/layout/activity_show_contant.xml -->

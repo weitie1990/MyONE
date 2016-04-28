@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/backgroud"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="135px"
+            android:layout_height="match_parent"
+            android:background="@color/backgroud"
+            android:onClick="back" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="27px"
+                android:scaleType="centerInside"
+                android:src="@drawable/iv_main_back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/The_new_group_chat"
+            android:textColor="@color/main_kuang"
+            android:textSize="60px" />
+
+        <Button
+            android:layout_width="240px"
+            android:layout_height="90px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15px"
+            android:onClick="save"
+            android:text="@string/button_save"
+            android:textColor="@color/main_kuang"
+            android:textSize="54px"
+            android:background="@drawable/yuanqu_apply"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/dark_gray"
+        />
+    <EditText
+        android:id="@+id/edit_group_name"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_margin="30px"
+        android:background="@drawable/view_shape"
+        android:hint="@string/group_name"
+        android:paddingLeft="15px"
+        android:singleLine="true"
+        android:textSize="54px" />
+
+    <EditText
+        android:id="@+id/edit_group_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@drawable/view_shape"
+        android:gravity="top|left"
+        android:hint="@string/Group_chat_profile"
+        android:lines="5"
+        android:paddingLeft="15px"
+        android:paddingTop="15px"
+        android:textSize="54px" />
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+       android:layout_height="120px"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@drawable/view_shape"
+        >
+        <TextView 
+            android:layout_marginLeft="15px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Whether_the_public"
+            android:textColor="@color/main_kuang"
+            android:layout_gravity="center_vertical"
+            android:textSize="54px"
+            android:layout_weight="1"
+            />
+        
+        <CheckBox 
+            android:id="@+id/cb_public"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_gravity="center_vertical"
+            android:button="@drawable/checkbox_bg_selector"
+            />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/ll_open_invite"
+        android:layout_width="match_parent"
+       android:layout_height="120px"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@drawable/view_shape"
+        >
+        <TextView 
+            android:layout_marginLeft="15px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Open_group_members_invited"
+            android:textColor="@color/main_kuang"
+            android:layout_gravity="center_vertical"
+            android:textSize="54px"
+            android:layout_weight="1"
+            />
+        
+        <CheckBox 
+            android:id="@+id/cb_member_inviter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_gravity="center_vertical"
+            android:button="@drawable/checkbox_bg_selector"
+            />
+        
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/C:/Users/Thinkpad/Desktop/takepic/MyApplication/DoAPP/res/layout/activity_new_group.xml -->

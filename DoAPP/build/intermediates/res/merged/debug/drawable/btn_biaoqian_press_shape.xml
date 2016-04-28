@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+     >
+
+    <solid android:color="@color/btn_pressed_green_solid" />
+    <corners android:radius="20dp" />
+
+</shape><!-- From: file:/C:/Users/Thinkpad/Desktop/takepic/MyApplication/DoAPP/res/drawable/btn_biaoqian_press_shape.xml -->

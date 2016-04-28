@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:gravity="center_vertical"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="45px"
+            android:layout_centerVertical="true"
+            android:textColor="#3e6c9e"
+            android:paddingTop="30px"
+            android:visibility="gone"
+            android:paddingBottom="30px"
+            android:drawableLeft="@drawable/iv_maincontact_clock"
+            />
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_backforapply"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15px"
+            >
+        <ImageView
+            android:id="@+id/iv_backforapply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iv_maincontact_sminle"
+            android:layout_marginLeft="15px"
+            android:layout_centerVertical="true"
+
+             />
+            <TextView
+                android:id="@+id/iv_backforapply_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_backforapply"
+                android:text="+1"
+                android:textColor="@color/main_kuang"
+                android:textSize="@dimen/main_text_sizes_largefordata"
+                android:layout_marginLeft="6px"
+                android:layout_centerVertical="true"
+
+
+                />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_replyforapply"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/rl_backforapply"
+        android:layout_marginLeft="15px"
+
+        >
+        <ImageView
+            android:id="@+id/iv_replyforapply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iv_maincontact_chat"
+            android:layout_centerVertical="true"
+
+            />
+        <TextView
+            android:id="@+id/iv_replyforapply_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+1"
+            android:textColor="@color/main_kuang"
+            android:textSize="@dimen/main_text_sizes_largefordata"
+            android:layout_toRightOf="@+id/iv_replyforapply"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6px"
+
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_attentionitem_smile"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/rl_replyforapply"
+        android:layout_marginLeft="15px"
+        >
+        <ImageView
+            android:id="@+id/iv_attentionitem_smile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iv_maincontact_sentto"
+            android:layout_centerVertical="true"
+
+            />
+        <TextView
+            android:id="@+id/iv_attentionitem_smile_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+1"
+            android:textColor="@color/main_kuang"
+            android:textSize="@dimen/main_text_sizes_largefordata"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_attentionitem_smile"
+            android:layout_marginLeft="6px"
+            />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_attentionitem_replysum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12px"
+        android:textSize="30px"
+        android:textColor="@color/main_text"
+        android:visibility="gone"
+        />
+
+    </RelativeLayout>
+
+<!-- From: file:/C:/Users/Thinkpad/Desktop/takepic/MyApplication/DoAPP/res/layout/title_attionitem_butom_hui.xml -->

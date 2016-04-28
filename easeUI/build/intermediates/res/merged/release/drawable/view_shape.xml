@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+<!-- 边框颜色值 -->
+<item>
+    <shape>
+        <corners android:radius="8dp" />
+        <solid android:color="#ffffffff" />
+        <stroke
+            android:width="1dp"
+            android:color="@color/main_kuang" />
+    </shape>
+</item>
+<!-- 主体背景颜色值 给底边长度颜色值-->
+<item
+    android:bottom="1dp"
+    android:left="1dp"
+    android:right="1dp"
+    android:top="1dp"
+    >
+    <shape>
+        <solid android:color="#ffffffff"
+
+            />
+        <corners android:radius="8dp" />
+        <stroke
+            android:width="1dp"
+            android:color="#ffffffff" />
+    </shape>
+</item>
+
+</layer-list><!-- From: file:/C:/Users/Thinkpad/Desktop/takepic/MyApplication/easeUI/src/main/res/drawable/view_shape.xml -->

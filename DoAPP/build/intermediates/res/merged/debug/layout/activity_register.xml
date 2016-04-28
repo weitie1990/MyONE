@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_dark"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180px"
+        android:background="@color/backgroud"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textSize="60px"
+            android:textColor="@color/main_kuang"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/dark_gray" />
+
+    <LinearLayout
+        android:layout_marginTop="300px"
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:background="@drawable/view_shape">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号 |"
+            android:textSize="@dimen/main_text_login"
+            android:textColor="@color/main_kuang"
+            />
+
+        <EditText
+            android:id="@+id/et_register_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="135px"
+            android:layout_margin="24px"
+            android:background="@null"
+            android:inputType="number"
+            android:paddingLeft="40px"
+            android:textColor="#ff98bede"
+            android:textSize="@dimen/main_text_login"
+            android:textColorHint="@color/dark_gray"
+            android:hint="请输入手机号"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="60px"
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:background="@drawable/view_shape">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码 |"
+            android:textSize="@dimen/main_text_login"
+            android:textColor="@color/main_kuang"
+            />
+
+        <EditText
+            android:id="@+id/et_register_yanzhengma"
+            android:layout_width="0dp"
+            android:layout_height="135px"
+            android:layout_margin="24px"
+            android:background="@null"
+            android:inputType="number"
+            android:paddingLeft="40px"
+            android:textColor="#ff98bede"
+            android:textSize="@dimen/main_text_login"
+            android:textColorHint="@color/dark_gray"
+            android:hint="请输入验证码"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:id="@+id/et_register_get"
+            android:layout_width="240px"
+            android:layout_height="80px"
+            android:textSize="36px"
+            android:textColor="@color/black"
+            android:src="@drawable/iv_get_yanzhengma"
+            android:layout_marginRight="10px"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="60px"
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:background="@drawable/view_shape">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密    码 |"
+            android:textSize="@dimen/main_text_login"
+            android:textColor="@color/main_kuang"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="135px"
+            android:layout_margin="24px"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:paddingLeft="40px"
+            android:textColor="#ff98bede"
+            android:textSize="@dimen/main_text_login"
+            android:textColorHint="@color/dark_gray"
+            android:password="true"
+
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register_next"
+        android:layout_width="500px"
+        android:layout_height="120px"
+        android:background="@drawable/btn_hui_main_selector"
+        android:enabled="true"
+        android:text="下一步"
+        android:textSize="@dimen/main_text_login"
+        android:textColor="@color/main_kuang"
+        android:layout_marginTop="150px"
+        android:layout_gravity="center_horizontal"
+        android:onClick="next" />
+
+</LinearLayout><!-- From: file:/C:/Users/Thinkpad/Desktop/takepic/MyApplication/DoAPP/res/layout/activity_register.xml -->

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    android:id="@+id/global_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15px"
+    android:background="@drawable/view_shape"
+    >
+
+    <com.lanxiao.doapp.myView.RoundedCornersImage
+        android:id="@+id/roundeImage_userpic"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:scaleType="centerCrop"
+        app:cornerRadius="4dp"
+        android:background="@drawable/iv_userinfo_pic"
+        app:layout_auto_baseheight="width"
+        />
+    <ImageView
+        android:id="@+id/iv_friend_attent"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:layout_below="@id/roundeImage_userpic"
+        android:layout_marginTop="30px"
+        android:src="@drawable/iv_maincont_attent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_kuang"
+        android:textSize="40px"
+        android:text="关注"
+        android:layout_below="@id/iv_friend_attent"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="6px"
+        />
+    <RelativeLayout
+        android:layout_toRightOf="@id/roundeImage_userpic"
+        android:layout_marginLeft="15px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/tv_weight_left1"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="姓    名"
+                android:textColor="@color/main_kuang"
+                android:singleLine="true"
+                android:textSize="40px"
+                android:layout_marginTop="40px"
+                android:layout_marginBottom="40px"
+                />
+            <TextView
+                android:id="@+id/miv_friend_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@color/main_kuang"
+                android:layout_toRightOf="@id/tv_weight_left1"
+                android:layout_marginLeft="15px"
+                android:layout_marginTop="40px"
+                android:layout_marginBottom="40px"
+                android:textSize="40px"
+
+                />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="@color/dark_gray"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/tv_weight_left2"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="公    司"
+                android:textColor="@color/main_kuang"
+                android:singleLine="true"
+                android:textSize="40px"
+                android:layout_marginTop="40px"
+                android:layout_marginBottom="40px"
+                />
+            <TextView
+                android:id="@+id/miv_friend_commpanyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@color/main_kuang"
+                android:layout_toRightOf="@id/tv_weight_left2"
+                android:layout_marginLeft="15px"
+                android:layout_marginTop="40px"
+                android:layout_marginBottom="40px"
+                android:textSize="40px"
+
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="@color/dark_gray"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/tv_weight_left"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="签    名"
+                android:textColor="@color/main_kuang"
+                android:singleLine="true"
+                android:textSize="40px"
+                android:layout_marginTop="40px"
+                android:layout_marginBottom="40px"
+                />
+            <TextView
+                android:id="@+id/miv_friend_userinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@color/main_kuang"
+                android:layout_toRightOf="@id/tv_weight_left"
+                android:layout_marginLeft="15px"
+                android:layout_marginTop="40px"
+                android:layout_marginBottom="40px"
+                android:textSize="40px"
+
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="@color/dark_gray"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15px"
+            >
+            <TextView
+                android:id="@+id/tv_weight"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="标    签"
+                android:textColor="@color/main_kuang"
+                android:singleLine="true"
+                android:textSize="40px"
+                android:layout_marginTop="40px"
+                android:layout_marginBottom="40px"
+                />
+            <TextView
+                android:id="@+id/miv_friend_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@color/main_kuang"
+                android:layout_toRightOf="@id/tv_weight"
+                android:layout_marginLeft="15px"
+                android:layout_marginTop="40px"
+                android:layout_marginBottom="40px"
+                android:textSize="40px"
+
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="@color/dark_gray"/>
+
+    </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            >
+        <ImageView
+            android:id="@+id/iv_friend_add"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:src="@drawable/iv_friends_add"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_kuang"
+            android:textSize="40px"
+            android:text="加好友"
+            android:layout_marginBottom="15px"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/iv_friend_add"
+            android:layout_marginTop="6px"
+            />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>
+<!-- From: file:/C:/Users/Thinkpad/Desktop/takepic/MyApplication/DoAPP/res/layout/card_swiped_std_card_inner.xml -->

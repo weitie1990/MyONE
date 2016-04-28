@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_dark"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/backgroud"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/message_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24px"
+            android:src="@drawable/iv_main_back"
+            android:background="@drawable/ease_common_tab_bg"
+            />
+
+        <TextView
+            android:id="@+id/message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="会议"
+            android:textColor="@color/main_kuang"
+            android:textSize="60px" />
+        <TextView
+            android:id="@+id/message_search"
+            android:layout_width="300px"
+            android:layout_height="100px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24px"
+            android:text="会议列表"
+            android:textColor="@color/main_kuang"
+            android:layout_centerVertical="true"
+            android:textSize="50px"
+            android:gravity="center"
+            android:background="@drawable/btn_main_selector"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_gray" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24px"
+            >
+
+
+            <LinearLayout
+                android:layout_marginTop="36px"
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:background="@drawable/view_shape"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="会议 |"
+                    android:textSize="@dimen/main_text_login"
+                    android:textColor="@color/main_kuang"
+                    />
+
+                <EditText
+                    android:id="@+id/et_meeting_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="135px"
+                    android:layout_margin="24px"
+                    android:background="@null"
+                    android:hint="单行输入"
+                    android:paddingLeft="75px"
+                    android:textColor="@color/two_text"
+                    android:textSize="@dimen/main_text_login"
+                    android:textColorHint="@color/dark_gray"
+                    android:singleLine="true"
+                    />
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/view_shape"
+                android:orientation="vertical"
+                android:paddingLeft="60px"
+                android:paddingTop="60px"
+                android:paddingBottom="60px"
+                android:paddingRight="15px"
+                android:layout_marginTop="60px"
+
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/ll_meeting_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="120px"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/main_linklayout_selector"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15px"
+                        android:text="时    间"
+                        android:textColor="@color/main_kuang"
+                        android:textSize="54px" />
+
+                    <TextView
+                        android:id="@+id/iv_meeting_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/two_text"
+                        android:textSize="48px"
+                        android:hint="请填写会议时间"
+                        android:layout_marginLeft="60px"
+                        android:textColorHint="@color/dark_gray"
+
+                        />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="3px"
+                    android:background="@color/dark_gray" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_meeting_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="120px"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/main_linklayout_selector"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15px"
+                        android:text="地    点"
+                        android:textColor="@color/main_kuang"
+                        android:textSize="54px" />
+
+                    <TextView
+                        android:id="@+id/iv_meeting_location"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/two_text"
+                        android:textSize="48px"
+                        android:hint="请填写会议地点"
+                        android:layout_marginLeft="60px"
+                        android:textColorHint="@color/dark_gray"
+
+                        />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="3px"
+                    android:background="@color/dark_gray" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_meeting_jion"
+                    android:layout_width="match_parent"
+                    android:layout_height="120px"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/main_linklayout_selector"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15px"
+                        android:text="参会者"
+                        android:textColor="@color/main_kuang"
+                        android:textSize="54px" />
+
+                    <TextView
+                        android:id="@+id/iv_meeting_jion"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/two_text"
+                        android:textSize="48px"
+                        android:hint="请填写会议参与者"
+                        android:layout_marginLeft="60px"
+                        android:textColorHint="@color/dark_gray"
+
+                        />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="3px"
+                    android:background="@color/dark_gray" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_meeting_clock"
+                    android:layout_width="match_parent"
+                    android:layout_height="120px"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/main_linklayout_selector"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15px"
+                        android:text="提    醒"
+                        android:textColor="@color/main_kuang"
+                        android:textSize="54px" />
+
+                    <TextView
+                        android:id="@+id/iv_meeting_clock"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/two_text"
+                        android:textSize="48px"
+                        android:hint="请填写会议提醒地点"
+                        android:layout_marginLeft="60px"
+                        android:textColorHint="@color/dark_gray"
+                        />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="3px"
+                    android:background="@color/dark_gray" />
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="90px"
+                android:text="备注"
+                android:textColor="@color/main_kuang"
+                android:textSize="@dimen/main_text_sizes_middle" />
+            <EditText
+                android:id="@+id/et_meeting_beiju"
+                android:layout_width="match_parent"
+                android:layout_height="400px"
+                android:layout_marginLeft="15px"
+                android:layout_marginRight="15px"
+                android:layout_marginTop="30px"
+                android:background="@drawable/view_shape"
+                android:textColor="@color/main_text"
+                android:textColorHint="@color/two_text"
+                android:gravity="top|left"
+                android:padding="15px"
+                />
+            <Button
+                android:id="@+id/btn_meeting_do"
+                android:layout_width="500px"
+                android:layout_height="120px"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:background="@drawable/btn_hui_main_selector"
+                android:enabled="true"
+                android:onClick="save"
+                android:text="发布"
+                android:textSize="18sp"
+                android:textColor="@color/main_kuang"
+                android:layout_marginTop="120px"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

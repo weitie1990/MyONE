@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_dark"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/backgroud"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/signin_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24px"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/iv_main_back"
+            android:background="@drawable/ease_common_tab_bg"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:text="外勤签到"
+            android:textColor="@color/main_kuang"
+            android:textSize="60px"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/dark_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="48px"
+        android:background="@drawable/view_shape"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="240px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/currentlocation_item_icon"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:layout_marginLeft="90px"
+                android:scaleType="centerInside"
+                android:src="@drawable/iv_work_meeting" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/currentlocation_item_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="24px"
+                    android:textColor="@color/main_kuang"
+                    android:textSize="48px"
+
+                    />
+
+                <TextView
+                    android:id="@+id/currentlocation_item_count"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15px"
+                    android:paddingLeft="24px"
+                    android:textColor="@color/main_kuang"
+                    android:textSize="48px" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:background="@color/dark_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300px">
+
+            <ImageView
+                android:id="@+id/iv_signin_cinema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="24px"
+                android:layout_marginTop="30px"
+                android:src="@drawable/iv_image"
+                android:background="@drawable/ease_common_tab_bg"
+                />
+
+            <ImageView
+                android:id="@+id/iv_signin_userpic"
+                android:layout_width="180px"
+                android:layout_height="180px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="90px"
+                android:layout_marginTop="30px"
+                android:scaleType="centerCrop"
+
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:background="@color/dark_gray" />
+
+        <EditText
+            android:id="@+id/et_signin_beiju"
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:layout_marginTop="30px"
+            android:background="@color/backgroud"
+            android:gravity="top|left"
+            android:hint="备注"
+            android:paddingLeft="90px"
+            android:paddingTop="15px"
+            android:textColor="@color/main_text"
+            android:textColorHint="@color/two_text"
+            android:textSize="48px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_marginLeft="15px"
+            android:layout_marginRight="15px"
+            android:layout_marginTop="15px"
+            android:background="@color/main_dark"
+            android:gravity="center_vertical"
+            android:paddingLeft="30px"
+            android:text="(选填)类型"
+            android:textColor="@color/main_kuang"
+            android:textSize="@dimen/main_text_sizes_middle" />
+
+        <com.zhy.autolayout.widget.AutoRadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:layout_marginTop="15px"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+            <RadioButton
+                android:id="@+id/rb_signin_client"
+                android:layout_width="wrap_content"
+                android:layout_height="180px"
+                android:text="朋友聚会"
+                android:textColor="@color/main_kuang" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:background="@color/dark_gray" />
+
+            <RadioButton
+                android:id="@+id/rb_signin_work"
+                android:layout_width="wrap_content"
+                android:layout_height="180px"
+                android:text="上班签到"
+                android:textColor="@color/main_kuang"
+
+                />
+        </com.zhy.autolayout.widget.AutoRadioGroup>
+
+        <Button
+            android:id="@+id/btn_sigin_ok"
+            android:layout_width="500px"
+            android:layout_height="120px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="120px"
+            android:background="@drawable/btn_main_selector"
+            android:enabled="true"
+            android:onClick="save"
+            android:text="确    定"
+            android:textColor="@color/main_kuang"
+            android:textSize="54px" />
+    </LinearLayout>
+
+
+</LinearLayout>
+<!-- From: file:/C:/Users/Thinkpad/Desktop/takepic/MyApplication/DoAPP/res/layout/activity_sign_in.xml -->

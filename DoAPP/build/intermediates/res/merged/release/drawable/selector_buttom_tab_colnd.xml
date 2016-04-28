@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    	<!-- 默认时的图片 -->
+    <item android:drawable="@drawable/ib_tab_apply"/>
+  <!--  &lt;!&ndash; 选择时的图片 &ndash;&gt;
+    <item android:drawable="@drawable/ib_tab_apply" android:state_checked="true"/>-->
+</selector>
+<!-- From: file:/C:/Users/Thinkpad/Desktop/takepic/MyApplication/DoAPP/res/drawable/selector_buttom_tab_colnd.xml -->

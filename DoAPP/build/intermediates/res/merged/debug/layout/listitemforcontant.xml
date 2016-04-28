@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/sort_key_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="18dip"
+        android:background="#ededed">
+
+        <TextView
+            android:id="@+id/sort_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dip"
+            android:textColor="@color/dark_gray"
+            android:textSize="42px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:gravity="center">
+
+            <com.lanxiao.doapp.myView.CircularImage
+                android:id="@+id/iv_iconforapply"
+                android:layout_width="120px"
+                android:layout_height="120px"
+                app:layout_auto_baseheight="width"
+                android:src="@color/btn_blue_normal"
+                 />
+
+            <TextView
+                android:id="@+id/tv_contant_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="阿娟"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_appforname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1111"
+                android:textColor="#de000000"
+                android:textSize="48px" />
+
+            <TextView
+                android:id="@+id/tv_appforinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6px"
+                android:text="2222"
+                android:textColor="#89000000"
+                android:textSize="42px" />
+
+        </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/ib_addapply"
+                android:layout_width="120px"
+                android:layout_height="80px"
+                android:layout_marginRight="90px"
+                android:background="@drawable/button_shape"
+                android:text="@string/add"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>
+<!-- From: file:/C:/Users/Thinkpad/Desktop/takepic/MyApplication/DoAPP/res/layout/listitemforcontant.xml -->

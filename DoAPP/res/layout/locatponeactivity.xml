@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lanxiao.doapp.activity.LocatContentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/Rl_contact"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_top_bar"
+            android:background="@color/backgroud">
+
+            <ImageView
+                android:id="@+id/iv_repate_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:src="@drawable/iv_main_back" />
+
+            <TextView
+                android:id="@+id/tv_repater_titile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="选择联系人"
+                android:textColor="@color/main_kuang"
+                android:textSize="60px" />
+
+
+
+
+            <ImageView
+                android:id="@+id/img_weixin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:src="@drawable/image_weixin"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_queding"
+                android:layout_width="200px"
+                android:layout_height="90px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:background="@drawable/btn_main_selector"
+                android:gravity="center"
+                android:src="@drawable/publish"
+                android:text="确定"
+                android:textColor="@color/main_kuang"
+                android:textSize="60px"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="@color/dark_gray" />
+
+        <EditText
+            android:id="@+id/et_reater_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/view_shape"
+            android:gravity="top|left"
+            android:hint="在此输入附言"
+            android:lines="4"
+            android:paddingLeft="9px"
+            android:textColorHint="@color/main_text"
+            android:visibility="gone"
+
+            />
+
+        <Button
+            android:id="@+id/btn_search_btn_ok"
+            android:layout_width="500px"
+            android:layout_height="120px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="120px"
+            android:background="@drawable/btn_main_selector"
+            android:gravity="center"
+            android:text="确    定"
+            android:textColor="@color/main_kuang"
+            android:textSize="@dimen/main_text_sizes_large"
+            android:visibility="gone" />
+
+        <com.lanxiao.doapp.myView.SegmentView
+            android:id="@+id/segment_view"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp">
+
+        </com.lanxiao.doapp.myView.SegmentView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <ListView
+                android:id="@+id/contacts_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:descendantFocusability="afterDescendants"
+                android:divider="#D4D4D4"
+                android:dividerHeight="1px"
+                android:fastScrollEnabled="true" />
+
+            <ExpandableListView
+                android:id="@+id/expendlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"></ExpandableListView>
+
+            <com.easemob.easeui.widget.EaseSidebar
+                android:id="@+id/sidebar"
+                android:layout_width="45px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/floating_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ease_show_head_toast_bg"
+                android:gravity="center"
+                android:paddingLeft="75px"
+                android:paddingRight="75px"
+                android:textColor="@android:color/white"
+                android:textSize="120px"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true" >
+
+                <ImageView
+                    android:id="@+id/tv_ok"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginRight="14dp"
+                    android:src="@drawable/ib_tab_add" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <HorizontalScrollView
+            android:id="@+id/horizontalscrlooview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:visibility="gone"
+            >
+
+                <LinearLayout
+                    android:id="@+id/ll_container_tongshi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal"></LinearLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_show_nocontant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/no_contant"
+        android:textColor="@color/main_text"
+        android:visibility="gone" />
+
+</FrameLayout>

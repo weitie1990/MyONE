@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:miles="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_search_he_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/main_dark"
+        android:paddingBottom="15px"
+        android:paddingLeft="15px"
+        android:paddingTop="15px">
+
+        <com.lanxiao.doapp.myView.RoundedCornersImage
+            android:id="@+id/iv_search_icon"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            miles:layout_auto_basewidth="height"
+            miles:cornerRadius="15px" />
+
+        <TextView
+            android:id="@+id/tv_search_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:layout_toRightOf="@id/iv_search_icon"
+            android:maxLines="2"
+            android:textColor="@color/main_text"
+            android:ellipsize="end"
+            android:textSize="42px"
+            android:gravity="left"
+            />
+
+        <TextView
+            android:id="@+id/tv_search_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_search_info"
+            android:layout_below="@id/tv_search_info"
+            android:layout_toRightOf="@id/iv_search_icon"
+            android:drawableLeft="@drawable/clock_smol"
+            android:text="2222"
+            android:textColor="@color/two_text"
+            android:textSize="33px" />
+
+        <TextView
+            android:id="@+id/tv_search_deaita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_search_data"
+            android:layout_marginLeft="60px"
+            android:layout_toRightOf="@id/tv_search_data"
+            android:text="@string/search_deaufs"
+            android:textColor="@color/black"
+            android:textSize="45px"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_search_me_replyinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_search_data"
+            android:layout_below="@id/tv_search_data"
+            android:layout_marginTop="15px"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/lines1"
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:background="@color/dark_gray" />
+
+            <TextView
+                android:id="@+id/tv_search_me_replyinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lines1"
+                android:layout_marginTop="15px"
+                android:text="2222"
+                android:textColor="@color/main_text"
+                android:textSize="42px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_search_me_argeeinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_search_data"
+            android:layout_below="@id/rl_search_me_replyinfo"
+            android:layout_marginTop="15px"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/lines"
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:background="@color/dark_gray" />
+
+            <TextView
+                android:id="@+id/tv_search_me_argeeinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lines"
+                android:layout_marginTop="15px"
+                android:text="2222"
+                android:textColor="@color/main_text"
+                android:textSize="42px" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</merge><!-- From: file:/C:/Users/Thinkpad/Desktop/takepic/MyApplication/DoAPP/res/layout/do_type_search.xml -->

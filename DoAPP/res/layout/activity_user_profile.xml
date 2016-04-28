@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_dark"
+    android:orientation="vertical">
+    
+	<RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/backgroud"
+        android:gravity="center_vertical" >
+
+        <include layout="@layout/ease_commom_back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="用户资料"
+            android:textColor="@color/main_kuang"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_gray"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="30px"
+        android:padding="15px"
+        android:background="@drawable/view_shape"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/main_dark"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <com.lanxiao.doapp.myView.CircularImage
+                android:id="@+id/iv_userPic"
+                android:layout_width="180px"
+                android:layout_height="180px"
+                android:layout_marginLeft="30px"
+                android:scaleType="centerCrop"
+                app:layout_auto_baseheight="width"
+                android:layout_marginTop="30px"
+                android:layout_centerHorizontal="true"
+                />
+                <Button
+                    android:id="@+id/iv_userinfo_logout"
+                    android:layout_width="210px"
+                    android:layout_height="70px"
+                    android:background="@drawable/btn_hui_main_selector"
+                    android:text="联系他"
+                    android:textSize="@dimen/main_text_login"
+                    android:textColor="@color/main_kuang"
+                    android:layout_below="@id/iv_userPic"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10px"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:layout_marginRight="60px"
+                android:paddingBottom="30px"
+                >
+
+                <TextView
+                    android:id="@+id/iv_userinfo_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/main_kuang"
+                    android:textSize="60px"
+                    android:layout_marginTop="60px"
+                    />
+
+                <TextView
+                    android:id="@+id/iv_userinfo_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_userinfo_name"
+                    android:textColor="@color/main_kuang"
+                    android:textSize="40px"
+                    />
+                <TextView
+                    android:id="@+id/ll_usrinfo_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_userinfo_id"
+                    android:textColor="@color/main_kuang"
+                    android:textSize="40px"
+                    android:layout_marginTop="60px"
+                    />
+                <ImageView
+                    android:id="@+id/iv_setting_twocode"
+                    android:layout_width="90px"
+                    android:layout_height="90px"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="80px"
+                    android:src="@drawable/mm_title_btn_qrcode_normal" />
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:background="@color/backgroud"
+            android:layout_width="match_parent"
+            android:layout_height="180px"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_userset_dosum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/main_kuang"
+                    android:textSize="40px"
+                    android:text="4"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_userset_dosum"
+                    android:text="等级"
+                    android:textColor="@color/main_kuang"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="42px"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="3px"
+                android:layout_height="80px"
+                android:background="@color/dark_gray" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_userset_friendsum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/main_kuang"
+                    android:layout_centerHorizontal="true"
+                    android:text="4"
+                    android:textSize="40px"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_userset_friendsum"
+                    android:text="朋友"
+                    android:textColor="@color/main_kuang"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="42px"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="3px"
+                android:layout_height="80px"
+                android:background="@color/dark_gray" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_userset_attentionsum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/main_kuang"
+                    android:layout_centerHorizontal="true"
+                    android:text="4"
+                    android:textSize="40px"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_userset_attentionsum"
+                    android:text="关注"
+                    android:textColor="@color/main_kuang"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="42px"
+
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="3px"
+                android:layout_height="80px"
+                android:background="@color/dark_gray" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_userset_funs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/main_kuang"
+                    android:layout_centerHorizontal="true"
+                    android:text="4"
+                    android:textSize="40px"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_userset_funs"
+                    android:text="粉丝"
+                    android:textColor="@color/main_kuang"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="42px"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3px"
+            android:background="@color/dark_gray" />
+
+        <com.lanxiao.doapp.myView.UserInfoItemView
+            android:id="@+id/ll_usrinfo_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:userTitle="性    别"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3px"
+            android:background="@color/dark_gray" />
+
+        <com.lanxiao.doapp.myView.UserInfoItemView
+            android:id="@+id/ll_usrinfo_unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:userTitle="单位(团队)"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3px"
+            android:background="@color/dark_gray" />
+        <com.lanxiao.doapp.myView.UserInfoItemView
+            android:id="@+id/ll_usrinfo_team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:userTitle="部    门"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3px"
+            android:background="@color/dark_gray" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/tv_userinfo_left"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="手机号"
+                android:textColor="@color/main_kuang"
+                android:singleLine="true"
+                android:textSize="40px"
+                android:layout_marginTop="40px"
+                android:layout_marginBottom="40px"
+                />
+            <TextView
+                android:id="@+id/ll_usrinfo_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_kuang"
+                android:layout_toRightOf="@id/tv_userinfo_left"
+                android:layout_marginTop="40px"
+                android:layout_marginBottom="40px"
+                android:layout_marginRight="100px"
+                android:textSize="40px"
+                android:gravity="center"
+                />
+            <ImageView
+                android:id="@+id/img_usrinfo_callphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_callphone"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30px"
+                android:background="?android:attr/actionBarItemBackground"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3px"
+            android:background="@color/dark_gray" />
+        <com.lanxiao.doapp.myView.UserInfoItemView
+            android:id="@+id/ll_usrinfo_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:userTitle="地    区"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3px"
+            android:background="@color/dark_gray" />
+      <!--  <com.lanxiao.doapp.myView.UserInfoItemView
+            android:id="@+id/ll_usrinfo_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:userTitle="签    名"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3px"
+            android:background="@color/dark_gray" />-->
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/do_qipiao" />
+    <item android:drawable="@drawable/do_qipiao" />
+</selector><!-- From: file:/C:/Users/Thinkpad/Desktop/takepic/MyApplication/easeUI/src/main/res/drawable/ease_chatfrom_bg.xml --><!-- From: file:/C:/Users/Thinkpad/Desktop/takepic/MyApplication/DoAPP/build/intermediates/exploded-aar/MyApplication/easeUI/unspecified/res/drawable/ease_chatfrom_bg.xml -->

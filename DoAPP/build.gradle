@@ -1,0 +1,100 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+
+    }
+}
+apply plugin: 'android'
+dependencies {
+    compile files('libs/core.jar')
+    compile files('libs/libammsdk.jar')
+    compile 'com.jakewharton:butterknife:5.1.1'
+    compile files('libs/jpush-android-2.1.0.jar')
+    compile files('libs/bolts-android-1.2.0.jar')
+    compile project(':easeUI')
+    compile project(':autolayout')
+    compile project(':library')
+    compile 'com.android.support:recyclerview-v7:23.1.0'
+    compile files('libs/Parse-1.9.4.jar')
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets', 'src/main/assets', 'src/main/assets/']
+            jniLibs.srcDirs = ['libs']
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+    defaultConfig {
+        targetSdkVersion 23
+    }
+    productFlavors {
+    }
+    signingConfigs {
+        release {
+            storeFile file("androiddebugkey.jks")
+            storePassword "lanxiao4581483"
+            keyAlias "doapp"
+            keyPassword "lanxiao4581483"
+        }
+    }
+
+
+    buildTypes {
+        debug {
+            /* // 不显示Log
+             buildConfigField "boolean", "LOG_DEBUG", "false"
+             //混淆
+             minifyEnabled true
+             //Zipalign优化
+             zipAlignEnabled true
+             // 移除无用的resource文件
+             shrinkResources true
+             //前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明
+             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'*/
+            signingConfig signingConfigs.release
+        }
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            //混淆
+            minifyEnabled true
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            //前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //签名
+            signingConfig signingConfigs.release
+        }
+    }
+
+}

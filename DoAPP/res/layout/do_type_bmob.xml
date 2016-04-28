@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:miles="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/rl_bmob_he_main"
+    android:background="@drawable/do_linked_linklayout_selector"
+    android:layout_marginLeft="30px"
+    android:layout_marginRight="30px"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_bmob_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15px"
+        android:textColor="@color/main_text"
+        android:textSize="45px"
+        android:layout_marginTop="15px"
+        />
+    </RelativeLayout>
+
+    <com.lanxiao.doapp.myView.NineGridImageView
+        android:id="@+id/ll_bmob_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        miles:imgGap="3dp"
+        miles:maxSize="-1"
+        miles:showStyle="grid"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/tv_bmob_deaita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15px"
+        android:text="@string/search_all_deaufs"
+        android:textColor="@color/black"
+        android:textSize="50px"
+        android:layout_marginTop="15px"
+        />
+</LinearLayout>

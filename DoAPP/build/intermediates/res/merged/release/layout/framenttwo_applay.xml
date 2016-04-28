@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mob="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/Rl_main"
+        android:layout_width="fill_parent"
+        android:layout_height="180px"
+        android:background="@color/backgroud"
+        >
+
+    <TextView
+        android:id="@+id/tv_nearby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="应用"
+        android:textColor="@color/main_kuang"
+        android:textSize="60px" />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/dark_gray"
+
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fl_error_item"
+        android:visibility="gone"
+        >
+    </FrameLayout>
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="135px"
+       android:background="@drawable/view_shape"
+       android:gravity="center_vertical"
+       android:layout_marginTop="60px"
+       android:orientation="horizontal"
+       >
+       <RelativeLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           >
+        <TextView
+            android:id="@+id/iv_applay_home"
+            android:layout_width="250px"
+            android:layout_height="100px"
+            android:textSize="54px"
+            android:textColor="@color/main_kuang"
+            android:text="生活"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/apply_tab_selector"
+
+
+            />
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="center"
+           >
+       <TextView
+           android:id="@+id/iv_applay_work"
+           android:layout_width="250px"
+           android:layout_height="100px"
+           android:textSize="54px"
+           android:textColor="@color/main_text"
+           android:text="工作"
+           android:gravity="center"
+           android:layout_centerVertical="true"
+           android:layout_centerHorizontal="true"
+           android:background="@drawable/apply_tab_selector"
+           />
+       </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           >
+           <TextView
+               android:id="@+id/iv_applay_commpany"
+               android:layout_width="250px"
+               android:layout_height="100px"
+               android:textSize="54px"
+               android:textColor="@color/main_text"
+               android:text="园区"
+               android:gravity="center"
+               android:layout_centerVertical="true"
+               android:layout_centerHorizontal="true"
+               android:background="@drawable/apply_tab_selector"
+               />
+       </RelativeLayout>
+   </LinearLayout>
+
+            <com.lanxiao.doapp.myView.ListViewForScrollView
+                android:id="@+id/lv_life"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="@drawable/view_shape"
+                android:layout_marginTop="60px"
+                android:scrollbars="none"
+                />
+            <com.lanxiao.doapp.myView.ListViewForScrollView
+                android:id="@+id/lv_work"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="@drawable/view_shape"
+                android:layout_marginTop="60px"
+                android:scrollbars="none"
+
+                />
+            <com.lanxiao.doapp.myView.ListViewForScrollView
+                android:id="@+id/lv_yuanqu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="@drawable/view_shape"
+                android:layout_marginTop="60px"
+                android:scrollbars="none"
+
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout><!-- From: file:/C:/Users/Thinkpad/Desktop/takepic/MyApplication/DoAPP/res/layout/framenttwo_applay.xml -->

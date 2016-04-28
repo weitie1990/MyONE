@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:mob="http://schemas.android.com/apk/res-auto"
+    tools:context="com.lanxiao.doapp.framment.Frament_workappion">
+    <com.lanxiao.doapp.myView.DoappTitleBar
+        android:id="@+id/doapp_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        mob:titleBarLeftImage="@drawable/iv_main_back"
+        mob:titleBarTitle="工作界面"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_gray"
+
+        />
+    <GridView
+        android:layout_margin="10dp"
+        android:background="@drawable/view_shape"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/gridview"
+        android:numColumns="3"
+        android:verticalSpacing="20dp"
+        android:horizontalSpacing="15dp"
+        android:padding="15dp"
+        android:scrollbars="none"
+        />
+
+
+
+
+</LinearLayout>
+<!-- From: file:/C:/Users/Thinkpad/Desktop/takepic/MyApplication/DoAPP/res/layout/frament_workappion.xml -->

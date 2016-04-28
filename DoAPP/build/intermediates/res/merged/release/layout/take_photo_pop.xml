@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        >
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/write_roudn_shape"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="快速发表微博"
+            android:textColor="@color/two_text"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_gray"
+            />
+
+
+        <Button
+            android:id="@+id/btn_take_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="拍照"
+            android:textColor="@color/main_kuang"
+            android:textSize="18sp"
+            android:background="@color/backgroud"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_gray"
+            />
+        <Button
+            android:id="@+id/btn_pick_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="文字"
+            android:textColor="@color/main_kuang"
+            android:textSize="18sp"
+            android:background="@color/backgroud"
+            />
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:text="取消"
+        android:textColor="@color/main_kuang"
+        android:textSize="18sp"
+        android:background="@drawable/write_roudn_shape"
+        android:layout_below="@id/pop_layout"
+        android:layout_marginTop="10dp"
+        />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/Thinkpad/Desktop/takepic/MyApplication/DoAPP/res/layout/take_photo_pop.xml -->

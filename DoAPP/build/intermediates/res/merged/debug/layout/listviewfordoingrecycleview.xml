@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/mYswipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.lanxiao.doapp.myView.AutoLoadRecyclerView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <com.lanxiao.doapp.myView.CircleProgressBar
+        android:id="@+id/McircleProgressBar"
+        app:mlpb_progress_color="#566da9"
+        app:mlpb_progress_stoke_width="3dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:id="@+id/tv_resh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_text"
+        android:text="@string/do_resh"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+         />
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/Thinkpad/Desktop/takepic/MyApplication/DoAPP/res/layout/listviewfordoingrecycleview.xml -->

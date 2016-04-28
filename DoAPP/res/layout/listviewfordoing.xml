@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_life"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@null"
+		android:dividerHeight="14dp"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        android:fadingEdge="none"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:clipToPadding="false"
+        android:scrollbarStyle="outsideOverlay"
+        />
+
+    <com.lanxiao.doapp.myView.CircleProgressBar
+        android:id="@+id/McircleProgressBar"
+        app:mlpb_progress_color="#566da9"
+        app:mlpb_progress_stoke_width="3dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/tv_resh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_text"
+        android:text="@string/do_resh"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+     >
+
+    <solid android:color="@color/backgroud" />
+    <corners android:radius="20dp" />
+    <stroke android:width="0.8dp"
+        android:color="@color/main_kuang"/>
+</shape><!-- From: file:/C:/Users/Thinkpad/Desktop/takepic/MyApplication/DoAPP/res/drawable/btn_biaoqian_shape.xml -->

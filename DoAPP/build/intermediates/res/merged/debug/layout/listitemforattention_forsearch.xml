@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.widget.AutoCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:miles="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardCornerRadius="8dp"
+    android:layout_marginLeft="30px"
+    android:layout_marginTop="30px"
+    android:layout_marginRight="30px"
+    android:foreground="?attr/selectableItemBackground"
+    android:id="@+id/root_comment"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/ll_attentionicon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        miles:layout_auto_baseheight="width"
+        android:orientation="horizontal"
+
+        >
+        <com.lanxiao.doapp.myView.RoundedCornersImage
+            android:id="@+id/iv_iconforattention"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            miles:cornerRadius="5dip"
+            android:scaleType="centerCrop"
+            miles:layout_auto_basewidth="height"
+            />
+
+        <TextView
+            android:id="@+id/tv_attentionforname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_iconforattention"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="30px"
+            android:textColor="@color/main_text"
+            android:textSize="54px" />
+        <TextView
+            android:id="@+id/tv_appfordate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_iconforattention"
+            android:layout_alignBottom="@id/iv_iconforattention"
+            android:layout_below="@id/tv_attentionforname"
+            android:layout_alignLeft="@id/tv_attentionforname"
+            android:textSize="36px"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/clock_smol"
+            android:textColor="@color/two_text" />
+        <ImageView
+            android:id="@+id/iv_attentionitem_funion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24px"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/iv_maincont_sent"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/iv_attentionitem_rightbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24px"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/righttop2"
+            />
+
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/infoname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:textColor="@color/main_text"
+        android:textSize="42px"
+        android:gravity="left"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/tv_look_alldeaita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/main_text_sizes_middle"
+        android:textColor="@color/black"
+        android:text="@string/search_all_deaufs"
+        android:layout_marginTop="30px"
+        android:visibility="gone"
+        android:layout_marginLeft="30px"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_layout_file"
+        android:layout_width="match_parent"
+        android:layout_height="270px"
+        android:layout_marginLeft="15px"
+        android:layout_marginRight="15px"
+        android:visibility="gone"
+        >
+    <ImageView
+        android:id="@+id/iv_post_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/file_icon_mid"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+        <TextView
+            android:id="@+id/tv_file_who"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_text"
+            android:textSize="45px"
+            android:layout_below="@id/iv_post_img"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+
+
+    <com.lanxiao.doapp.myView.NineGridImageView
+        android:id="@+id/ll_post_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        miles:imgGap="3dp"
+        miles:maxSize="-1"
+        miles:showStyle="grid"
+        android:layout_marginTop="8dp"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/ll_layout_voice"
+        android:layout_width="300px"
+        android:layout_height="100px"
+        android:layout_marginTop="15px"
+        android:layout_marginLeft="30px"
+        android:background="@drawable/btn_main_selector"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/tv_voice_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:text="''" />
+
+        <ImageView
+            android:id="@+id/iv_showAttentionMessage_voiceanmion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_voice_time"
+            android:src="@drawable/ease_chatfrom_voice_playing"
+            android:layout_centerVertical="true"
+            />
+        <ProgressBar
+            android:id="@+id/pb_post_voice"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:visibility="gone"
+            android:layout_toRightOf="@id/iv_showAttentionMessage_voiceanmion"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_attentionicon_backLoationContent"
+        android:layout_width="wrap_content"
+        android:layout_height="90px"
+        android:layout_marginTop="15px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@drawable/location_linklayout_selector"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/newsfeedpublish_poi_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/v5_0_1_publisher_poi_icon"
+            android:drawablePadding="24px"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="正在定位..."
+            android:textColor="#ff005092"
+            android:layout_gravity="center_vertical"
+            android:textSize="42px"
+            />
+
+
+    </LinearLayout>
+    <include layout="@layout/do_type_search"/>
+
+    <TextView
+        android:id="@+id/tv_post_like"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/main_dark"
+        android:visibility="gone"
+        />
+    <RelativeLayout
+        android:id="@+id/ll_task_he_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60px"
+        >
+        <TextView
+            android:id="@+id/tv_task_btninfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/main_text_sizes_samll"
+            android:textColor="@color/main_kuang"
+            android:layout_centerVertical="true"
+            android:text="1111"
+            android:layout_marginLeft="60px"
+            />
+        <Button
+            android:id="@+id/btn_task_btn_yes"
+            android:layout_width="160px"
+            android:layout_height="80px"
+            android:textSize="@dimen/main_text_sizes_large"
+            android:textColor="@color/main_kuang"
+            android:gravity="center"
+            android:background="@drawable/btn_main_selector"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="90px"
+            android:layout_toRightOf="@id/tv_task_btninfo"
+            android:text="是"
+            />
+        <Button
+            android:id="@+id/btn_task_btn_no"
+            android:layout_width="160px"
+            android:layout_height="80px"
+            android:textSize="@dimen/main_text_sizes_large"
+            android:textColor="@color/main_kuang"
+            android:gravity="center"
+            android:background="@drawable/btn_main_selector"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="90px"
+            android:layout_toRightOf="@id/btn_task_btn_yes"
+            android:text="否"
+            />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_search_btn_go"
+        android:layout_width="500px"
+        android:layout_height="120px"
+        android:layout_marginTop="15px"
+        android:textSize="@dimen/main_text_sizes_large"
+        android:textColor="@color/main_kuang"
+        android:gravity="center"
+        android:background="@drawable/btn_main_selector"
+        android:text="进入办理"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        />
+    <LinearLayout
+        android:id="@+id/ll_attentlayout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15px"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="@color/main_kuang"
+            />
+
+        <include layout="@layout/title_attionitem_butom_hui" />
+
+    </LinearLayout>
+</LinearLayout>
+</com.zhy.autolayout.widget.AutoCardView><!-- From: file:/C:/Users/Thinkpad/Desktop/takepic/MyApplication/DoAPP/res/layout/listitemforattention_forsearch.xml -->

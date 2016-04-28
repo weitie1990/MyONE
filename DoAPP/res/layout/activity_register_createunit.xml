@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_dark"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180px"
+        android:background="@color/backgroud"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建单位"
+            android:textColor="@color/main_kuang"
+            android:textSize="60px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/dark_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="150px"
+        android:background="@drawable/view_shape"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="简称"
+                android:textColor="@color/main_kuang"
+                android:textSize="54px" />
+
+            <EditText
+                android:id="@+id/et_register_short"
+                android:layout_width="fill_parent"
+                android:layout_height="135px"
+                android:layout_margin="24px"
+                android:background="@null"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="60px"
+                android:textColor="#ff98bede"
+                android:textColorHint="@color/dark_gray" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@color/dark_gray" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全称"
+                android:textColor="@color/main_kuang"
+                android:textSize="54px" />
+
+            <EditText
+                android:id="@+id/et_register_full"
+                android:layout_width="fill_parent"
+                android:layout_height="135px"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="24px"
+                android:background="@null"
+                android:paddingLeft="60px"
+                android:textColor="#ff98bede"
+                android:textColorHint="@color/dark_gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register_next"
+        android:layout_width="500px"
+        android:layout_height="135px"
+        android:layout_marginTop="150px"
+        android:background="@drawable/btn_hui_main_selector"
+        android:enabled="true"
+        android:onClick="save"
+        android:text="保存"
+        android:layout_gravity="center_horizontal"
+        android:textSize="54px"
+        android:textColor="@color/main_kuang"
+        />
+</LinearLayout>

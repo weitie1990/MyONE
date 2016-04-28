@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <com.lanxiao.doapp.myView.CircleProgressBar
+        android:id="@+id/McircleProgressBar"
+        app:mlpb_progress_color="#566da9"
+        app:mlpb_progress_stoke_width="3dp"
+        android:layout_width="180px"
+        android:layout_height="180px"
+        app:layout_auto_baseheight="width"
+         />
+
+</LinearLayout>

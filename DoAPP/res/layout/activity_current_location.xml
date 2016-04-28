@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/backgroud"
+        android:clickable="true"
+         >
+
+        <ImageView
+            android:id="@+id/currentlocation_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/iv_main_back"
+            android:layout_marginLeft="24px"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ease_common_tab_bg"
+            />
+
+
+
+        <TextView
+            android:id="@+id/iv_select_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="位置选择"
+            android:textColor="@color/main_kuang"
+            android:textSize="60px"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="24px"
+            />
+        <TextView
+            android:id="@+id/sign_search"
+            android:layout_width="300px"
+            android:layout_height="100px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24px"
+            android:text="查看签到"
+            android:textColor="@color/main_kuang"
+            android:layout_centerVertical="true"
+            android:textSize="50px"
+            android:gravity="center"
+            android:background="@drawable/btn_main_selector"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/dark_gray"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ededed"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:background="#ededed"
+            android:paddingLeft="@dimen/padding_search_bar"
+            android:paddingRight="@dimen/padding_search_bar"
+            android:layout_gravity="center_vertical"
+            >
+
+            <EditText
+                android:id="@+id/query"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/view_shape"
+                android:drawableLeft="@drawable/ease_search_bar_icon_normal"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="#8C8C8C"
+                android:textSize="16sp"
+                android:hint="搜索附近地方"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:singleLine="true"/>
+
+            <ImageButton
+                android:id="@+id/search_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:background="@android:color/transparent"
+                android:padding="6dp"
+                android:src="@drawable/ease_search_clear"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+      <!--  <EditText
+            android:id="@+id/currentlocation_search"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:layout_margin="24px"
+            android:background="@drawable/ease_seabar_input"
+            android:drawableLeft="@drawable/ease_search_bar_icon_normal"
+            android:drawablePadding="24px"
+            android:gravity="center_vertical"
+            android:hint="搜索或创建附近地点 "
+            android:paddingRight="90px"
+            android:textSize="36px" />-->
+        <TextView
+            android:id="@+id/tv_location_putdow"
+            android:layout_width="wrap_content"
+            android:layout_height="134px"
+            android:gravity="center"
+            android:text="取消"
+            android:paddingRight="15px"
+            android:visibility="gone"
+            android:textColor="@color/btn_blue_normal"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/main_top_RL"
+        android:layout_width="match_parent"
+        android:layout_height="750px">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/main_bdmap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="true"></com.baidu.mapapi.map.MapView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ease_icon_marka" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/currentlocation_display"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"/>
+    <ListView
+        android:id="@+id/main_search_pois"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        />
+</LinearLayout>

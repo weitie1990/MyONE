@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_dark"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/backgroud"
+        android:clickable="true"
+        >
+
+        <ImageView
+            android:id="@+id/signin_log_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/iv_main_back"
+            android:layout_marginLeft="2dp"
+            android:layout_centerVertical="true"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="签到记录"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/main_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_gray"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/backgroud"
+        >
+        <TextView
+            android:id="@+id/tv_signinLogInfo_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-2-11 星期四"
+            android:textColor="@color/main_text"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+        <ImageView
+            android:id="@+id/tv_signinLogInfo_time_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_signinLogInfo_time"
+            android:layout_marginRight="2dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/signin_go"
+            />
+        <ImageView
+            android:id="@+id/tv_signinLogInfo_time_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_signinLogInfo_time"
+            android:layout_marginLeft="2dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/signin_back"
+            />
+        <Button
+            android:id="@+id/tv_signinLogInfo_map"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="地图模式"
+            android:padding="5dp"
+            android:background="@drawable/view_shape"
+            android:textColor="@color/main_kuang"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/dark_gray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="员工"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:textColor="@color/main_text"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/dark_gray" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="最早签到"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:textColor="@color/main_text"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/dark_gray" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="最晚签到"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:textColor="@color/main_text"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_gray" />
+    <ListView
+        android:id="@+id/lv_signinLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/dark_gray"
+        android:dividerHeight="1dp"
+
+        >
+
+    </ListView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_gray" />
+</LinearLayout>
+<!-- From: file:/C:/Users/Thinkpad/Desktop/takepic/MyApplication/DoAPP/res/layout/activity_singin_log_info.xml -->

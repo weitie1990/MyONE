@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview_doing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <RelativeLayout
+        android:id="@+id/Rl_main"
+        android:layout_width="fill_parent"
+        android:layout_height="180px"
+        android:gravity="center_vertical"
+        android:background="@color/backgroud"
+        >
+        <TextView
+            android:id="@+id/tv_do_attent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="关注"
+            android:textSize="50px"
+            android:layout_marginLeft="300px"
+            android:textColor="@color/do_selector"
+            android:gravity="center_vertical"
+            android:background="@drawable/tv_main_selector"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/tv_do_img_attent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/do_image_selector"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_do_attent"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/tv_do_ismy"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="待办"
+            android:textSize="50px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="300px"
+            android:textColor="@color/do_selector"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:background="@drawable/tv_main_selector"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:id="@+id/tv_do_img_ismy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/do_image_selector"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="250px"
+            android:visibility="invisible"
+            />
+        <RelativeLayout
+            android:id="@+id/friendgroup"
+            android:layout_width="150px"
+            android:layout_height="match_parent"
+            android:background="@drawable/ease_common_tab_bg"
+            android:clickable="true"
+            android:layout_marginLeft="7px"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iv_titil_userinfo_deauflt"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pref"
+            android:layout_width="150px"
+            android:layout_height="match_parent"
+            android:background="@drawable/ease_common_tab_bg"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:layout_marginRight="7px"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iv_titil_menu"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+
+                />
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:background="@color/dark_gray"
+
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fl_error_item"
+        android:visibility="gone"
+        >
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"/>
+</LinearLayout>
+<!--</ScrollView>-->

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="48px"
+    android:paddingBottom="48px"
+    android:background="#ededed"
+    android:paddingLeft="15px"
+    android:paddingRight="15px">
+
+    <EditText
+      	android:paddingTop="15px"
+        android:paddingBottom="15px"
+        android:paddingLeft="15px"
+        android:id="@+id/query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/view_shape"
+        android:drawableLeft="@drawable/ease_search_bar_icon_normal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/main_kuang"
+        android:textSize="48px"
+        android:hint="搜索"
+        android:layout_marginLeft="15px"
+        android:layout_marginRight="15px"
+        android:singleLine="true"/>
+    <TextView
+        android:id="@+id/tv_comment_serch"
+        android:layout_width="140px"
+        android:layout_height="70px"
+        android:text="确定"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:background="@drawable/btn_main_selector"
+        android:layout_marginRight="40px"
+        android:textColor="@color/main_kuang"
+        android:visibility="invisible"
+        />
+
+
+</RelativeLayout>

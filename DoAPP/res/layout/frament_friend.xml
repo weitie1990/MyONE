@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/Rl_main"
+            android:layout_width="fill_parent"
+            android:layout_height="180px"
+            android:background="@color/backgroud"
+            >
+
+            <TextView
+                android:id="@+id/tv_nearby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="为您推荐"
+                android:textColor="@color/main_kuang"
+                android:textSize="60px" />
+            <RelativeLayout
+                android:id="@+id/re"
+                android:layout_width="150px"
+                android:layout_height="match_parent"
+                android:background="@drawable/ease_common_tab_bg"
+                android:clickable="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="7px"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/iv_more"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/btn_container_address_list"
+                android:layout_width="150px"
+                android:layout_height="match_parent"
+                android:background="@drawable/ease_common_tab_bg"
+                android:layout_marginLeft="7px"
+                >
+                <ImageView
+                    android:id="@+id/pref"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_new_content"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:id="@+id/unread_address_number_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3px"
+                    android:background="@drawable/unread_count_bg"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="36px"
+                    android:visibility="invisible"
+                     />
+            </RelativeLayout>
+            <!-- <TextView
+                 android:id="@+id/pref"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBottom="@id/tv_nearby"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="10dp"
+                 android:gravity="center"
+                 android:text="@string/list"
+                 android:textColor="@android:color/white"
+                 android:textSize="20sp" />-->
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="@color/dark_gray"
+            />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fl_error_item"
+            android:visibility="gone"
+            >
+        </FrameLayout>
+      <com.lanxiao.doapp.myView.DefinedScrollView
+          android:id="@+id/definedview"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+      </com.lanxiao.doapp.myView.DefinedScrollView>
+    </LinearLayout>
+

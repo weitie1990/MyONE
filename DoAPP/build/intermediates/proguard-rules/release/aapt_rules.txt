@@ -1,0 +1,654 @@
+# view res/layout/ease_emojicon.xml #generated:9
+# view res/layout/feed_activity2.xml #generated:234
+# view res/layout/framenttwo_doing.xml #generated:122
+# view res/layout/input_activity.xml #generated:586
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view res/layout/abc_alert_dialog_material.xml #generated:130
+-keep class android.support.v4.widget.Space { <init>(...); }
+
+# view res/layout/ease_chat_message_list.xml #generated:6
+# view res/layout/ease_widget_contact_list.xml #generated:5
+# view res/layout/feed_activity2.xml #generated:51
+# view res/layout/fragment_groups.xml #generated:37
+# view res/layout/fragment_robots.xml #generated:37
+# view res/layout/listviewfordoingrecycleview.xml #generated:8
+-keep class android.support.v4.widget.SwipeRefreshLayout { <init>(...); }
+
+# view res/layout/abc_action_menu_item_layout.xml #generated:17
+-keep class android.support.v7.internal.view.menu.ActionMenuItemView { <init>(...); }
+
+# view res/layout/abc_expanded_menu_layout.xml #generated:17
+-keep class android.support.v7.internal.view.menu.ExpandedMenuView { <init>(...); }
+
+# view res/layout/abc_list_menu_item_layout.xml #generated:17
+# view res/layout/abc_popup_menu_item_layout.xml #generated:17
+-keep class android.support.v7.internal.view.menu.ListMenuItemView { <init>(...); }
+
+# view res/layout/abc_screen_toolbar.xml #generated:27
+-keep class android.support.v7.internal.widget.ActionBarContainer { <init>(...); }
+
+# view res/layout/abc_action_mode_bar.xml #generated:19
+# view res/layout/abc_screen_toolbar.xml #generated:43
+-keep class android.support.v7.internal.widget.ActionBarContextView { <init>(...); }
+
+# view res/layout/abc_screen_toolbar.xml #generated:17
+-keep class android.support.v7.internal.widget.ActionBarOverlayLayout { <init>(...); }
+
+# view res/layout/abc_activity_chooser_view.xml #generated:19
+-keep class android.support.v7.internal.widget.ActivityChooserView$InnerLayout { <init>(...); }
+
+# view res/layout/abc_screen_content_include.xml #generated:19
+-keep class android.support.v7.internal.widget.ContentFrameLayout { <init>(...); }
+
+# view res/layout/abc_alert_dialog_material.xml #generated:48
+-keep class android.support.v7.internal.widget.DialogTitle { <init>(...); }
+
+# view res/layout/abc_screen_simple_overlay_action_mode.xml #generated:23
+-keep class android.support.v7.internal.widget.FitWindowsFrameLayout { <init>(...); }
+
+# view res/layout/abc_dialog_title_material.xml #generated:22
+# view res/layout/abc_screen_simple.xml #generated:17
+-keep class android.support.v7.internal.widget.FitWindowsLinearLayout { <init>(...); }
+
+# view res/layout/abc_action_mode_close_item_material.xml #generated:17
+# view res/layout/abc_search_dropdown_item_icons_2line.xml #generated:27
+# view res/layout/abc_search_dropdown_item_icons_2line.xml #generated:37
+# view res/layout/abc_search_dropdown_item_icons_2line.xml #generated:48
+# view res/layout/abc_search_view.xml #generated:116
+# view res/layout/abc_search_view.xml #generated:128
+# view res/layout/abc_search_view.xml #generated:38
+# view res/layout/abc_search_view.xml #generated:60
+# view res/layout/abc_search_view.xml #generated:97
+-keep class android.support.v7.internal.widget.TintImageView { <init>(...); }
+
+# view res/layout/abc_screen_simple.xml #generated:25
+# view res/layout/abc_screen_simple_overlay_action_mode.xml #generated:32
+-keep class android.support.v7.internal.widget.ViewStubCompat { <init>(...); }
+
+# view res/layout/abc_action_menu_layout.xml #generated:17
+-keep class android.support.v7.widget.ActionMenuView { <init>(...); }
+
+# view res/layout/popup_list.xml #generated:8
+-keep class android.support.v7.widget.RecyclerView { <init>(...); }
+
+# view res/layout/abc_search_view.xml #generated:78
+-keep class android.support.v7.widget.SearchView$SearchAutoComplete { <init>(...); }
+
+# view res/layout/abc_screen_toolbar.xml #generated:36
+-keep class android.support.v7.widget.Toolbar { <init>(...); }
+
+# view AndroidManifest.xml #generated:533
+-keep class cn.jpush.android.service.AlarmReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:498
+-keep class cn.jpush.android.service.DaemonService { <init>(...); }
+
+# view AndroidManifest.xml #generated:477
+-keep class cn.jpush.android.service.DownloadService { <init>(...); }
+
+# view AndroidManifest.xml #generated:510
+-keep class cn.jpush.android.service.PushReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:485
+-keep class cn.jpush.android.service.PushService { <init>(...); }
+
+# view AndroidManifest.xml #generated:462
+-keep class cn.jpush.android.ui.PushActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:407
+-keep class com.baidu.location.f { <init>(...); }
+
+# view res/layout/activity_current_location.xml #generated:142
+# view res/layout/ease_activity_baidumap.xml #generated:49
+-keep class com.baidu.mapapi.map.MapView { <init>(...); }
+
+# view AndroidManifest.xml #generated:404
+-keep class com.easemob.chat.EMChatService { <init>(...); }
+
+# view AndroidManifest.xml #generated:362
+-keep class com.easemob.chat.EMGCMBroadcastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:373
+-keep class com.easemob.chat.EMGCMListenerService { <init>(...); }
+
+# view AndroidManifest.xml #generated:388
+-keep class com.easemob.chat.EMMonitorReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:352
+-keep class com.easemob.chat.StartServiceReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:674
+-keep class com.easemob.easeui.Permissions.PermissionsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:222
+-keep class com.easemob.easeui.ui.EaseBaiduMapActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:200
+-keep class com.easemob.easeui.ui.EaseShowBigImageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:227
+-keep class com.easemob.easeui.ui.EaseShowVideoActivity { <init>(...); }
+
+# view res/layout/ease_widget_chat_input_menu.xml #generated:29
+-keep class com.easemob.easeui.widget.EaseChatExtendMenu { <init>(...); }
+
+# view res/layout/ease_fragment_chat.xml #generated:83
+-keep class com.easemob.easeui.widget.EaseChatInputMenu { <init>(...); }
+
+# view res/layout/ease_fragment_chat.xml #generated:69
+-keep class com.easemob.easeui.widget.EaseChatMessageList { <init>(...); }
+
+# view res/layout/ease_layout_chat_primary_menu.xml #generated:2
+-keep class com.easemob.easeui.widget.EaseChatPrimaryMenu { <init>(...); }
+
+# view res/layout/ease_fragment_contact_list.xml #generated:28
+-keep class com.easemob.easeui.widget.EaseContactList { <init>(...); }
+
+# view res/layout/ease_fragment_conversation_list.xml #generated:28
+-keep class com.easemob.easeui.widget.EaseConversationList { <init>(...); }
+
+# view res/layout/activity_group_details.xml #generated:60
+# view res/layout/em_activity_group_details.xml #generated:61
+-keep class com.easemob.easeui.widget.EaseExpandGridView { <init>(...); }
+
+# view res/layout/activity_group_pick_contacts.xml #generated:69
+# view res/layout/activity_location_contant.xml #generated:62
+# view res/layout/activity_pick_contact_no_checkbox.xml #generated:46
+# view res/layout/activity_show_contant.xml #generated:59
+# view res/layout/ease_widget_contact_list.xml #generated:21
+# view res/layout/locatponeactivity.xml #generated:141
+-keep class com.easemob.easeui.widget.EaseSidebar { <init>(...); }
+
+# view res/layout/em_activity_group_details.xml #generated:290
+-keep class com.easemob.easeui.widget.EaseSwitchButton { <init>(...); }
+
+# view res/layout/ease_fragment_chat.xml #generated:9
+# view res/layout/ease_fragment_contact_list.xml #generated:9
+# view res/layout/ease_fragment_conversation_list.xml #generated:8
+-keep class com.easemob.easeui.widget.EaseTitleBar { <init>(...); }
+
+# view res/layout/ease_fragment_chat.xml #generated:75
+-keep class com.easemob.easeui.widget.EaseVoiceRecorderView { <init>(...); }
+
+# view res/layout/ease_showvideo_activity.xml #generated:47
+-keep class com.easemob.easeui.widget.MyVideoView { <init>(...); }
+
+# view res/layout/ease_widget_emojicon.xml #generated:15
+-keep class com.easemob.easeui.widget.emojicon.EaseEmojiconIndicatorView { <init>(...); }
+
+# view res/layout/ease_layout_emojicon_menu.xml #generated:2
+# view res/layout/feed_activity2.xml #generated:252
+# view res/layout/input_activity.xml #generated:604
+-keep class com.easemob.easeui.widget.emojicon.EaseEmojiconMenu { <init>(...); }
+
+# view res/layout/ease_widget_emojicon.xml #generated:9
+-keep class com.easemob.easeui.widget.emojicon.EaseEmojiconPagerView { <init>(...); }
+
+# view res/layout/ease_widget_emojicon.xml #generated:28
+-keep class com.easemob.easeui.widget.emojicon.EaseEmojiconScrollTabBar { <init>(...); }
+
+# view res/layout/ease_activity_show_big_image.xml #generated:8
+-keep class com.easemob.easeui.widget.photoview.EasePhotoView { <init>(...); }
+
+# view AndroidManifest.xml #generated:425
+-keep class com.example.doapp.wxapi.WXEntryActivity { <init>(...); }
+
+# view res/layout/listviewfordoing.xml #generated:8
+-keep class com.handmark.pulltorefresh.library.PullToRefreshListView { <init>(...); }
+
+# view AndroidManifest.xml #generated:583
+-keep class com.lanxiao.doapp.MultiImageSelector.MultiImageSelectorActivity { <init>(...); }
+
+# view res/layout/list_item_camera.xml #generated:2
+# view res/layout/list_item_image.xml #generated:2
+-keep class com.lanxiao.doapp.MultiImageSelector.MultiUtils.view.SquareFrameLayout { <init>(...); }
+
+# view res/layout/list_item_image.xml #generated:5
+-keep class com.lanxiao.doapp.MultiImageSelector.MultiUtils.view.SquaredImageView { <init>(...); }
+
+# view AndroidManifest.xml #generated:174
+-keep class com.lanxiao.doapp.activity.AddContactActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:256
+-keep class com.lanxiao.doapp.activity.BlacklistActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:102
+-keep class com.lanxiao.doapp.activity.CaptureActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:167
+-keep class com.lanxiao.doapp.activity.ChatActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:190
+-keep class com.lanxiao.doapp.activity.ChatRoomActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:196
+-keep class com.lanxiao.doapp.activity.ChatRoomDetailsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:245
+-keep class com.lanxiao.doapp.activity.ContextMenuActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:624
+-keep class com.lanxiao.doapp.activity.CreateUnitActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:431
+-keep class com.lanxiao.doapp.activity.CurrentLocationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:322
+-keep class com.lanxiao.doapp.activity.DiagnoseActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:566
+-keep class com.lanxiao.doapp.activity.EaseContactAcitvity { <init>(...); }
+
+# view AndroidManifest.xml #generated:300
+-keep class com.lanxiao.doapp.activity.EditActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:441
+-keep class com.lanxiao.doapp.activity.FileBrowActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:232
+-keep class com.lanxiao.doapp.activity.ForwardMessageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:292
+-keep class com.lanxiao.doapp.activity.GroupBlacklistActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:180
+-keep class com.lanxiao.doapp.activity.GroupDetailsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:216
+-keep class com.lanxiao.doapp.activity.GroupPickContactsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:287
+-keep class com.lanxiao.doapp.activity.GroupSimpleDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:185
+-keep class com.lanxiao.doapp.activity.GroupsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:311
+-keep class com.lanxiao.doapp.activity.ImageGridActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:454
+-keep class com.lanxiao.doapp.activity.ImagePagerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:135
+-keep class com.lanxiao.doapp.activity.InputActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:146
+-keep class com.lanxiao.doapp.activity.LocatContentActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:450
+-keep class com.lanxiao.doapp.activity.LocationContantActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:153
+-keep class com.lanxiao.doapp.activity.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:89
+-keep class com.lanxiao.doapp.activity.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:629
+-keep class com.lanxiao.doapp.activity.MeetingDoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:659
+-keep class com.lanxiao.doapp.activity.MeetingWebActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:664
+-keep class com.lanxiao.doapp.activity.MyBaiduMapActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:239
+-keep class com.lanxiao.doapp.activity.NewFriendsMsgActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:205
+-keep class com.lanxiao.doapp.activity.NewGroupActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:329
+-keep class com.lanxiao.doapp.activity.OfflinePushNickActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:649
+-keep class com.lanxiao.doapp.activity.PersonSigninLogActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:599
+-keep class com.lanxiao.doapp.activity.PersonUserinfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:609
+-keep class com.lanxiao.doapp.activity.PostUserinfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:123
+-keep class com.lanxiao.doapp.activity.PublicActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:267
+-keep class com.lanxiao.doapp.activity.PublicChatRoomsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:262
+-keep class com.lanxiao.doapp.activity.PublicGroupsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:296
+-keep class com.lanxiao.doapp.activity.PublicGroupsSeachActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:316
+-keep class com.lanxiao.doapp.activity.RecorderVideoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:160
+-keep class com.lanxiao.doapp.activity.RegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:589
+-keep class com.lanxiao.doapp.activity.RegisterPage2Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:594
+-keep class com.lanxiao.doapp.activity.RegisterPage3Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:335
+-keep class com.lanxiao.doapp.activity.RobotsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:669
+-keep class com.lanxiao.doapp.activity.SafeSet { <init>(...); }
+
+# view AndroidManifest.xml #generated:570
+-keep class com.lanxiao.doapp.activity.SetActivity_set { <init>(...); }
+
+# view AndroidManifest.xml #generated:683
+-keep class com.lanxiao.doapp.activity.ShowContantActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:580
+-keep class com.lanxiao.doapp.activity.ShowFriendActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:251
+-keep class com.lanxiao.doapp.activity.ShowNormalFileActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:305
+-keep class com.lanxiao.doapp.activity.ShowVideoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:634
+-keep class com.lanxiao.doapp.activity.SignInActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:639
+-keep class com.lanxiao.doapp.activity.SignLogActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:644
+-keep class com.lanxiao.doapp.activity.SinginLogInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:79
+-keep class com.lanxiao.doapp.activity.SplashActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:619
+-keep class com.lanxiao.doapp.activity.TearmSumActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:614
+-keep class com.lanxiao.doapp.activity.TearmUserinfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:678
+-keep class com.lanxiao.doapp.activity.Tongshi_Contnet { <init>(...); }
+
+# view AndroidManifest.xml #generated:604
+-keep class com.lanxiao.doapp.activity.UnitUserinfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:341
+-keep class com.lanxiao.doapp.activity.UserProfileActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:280
+-keep class com.lanxiao.doapp.activity.VideoCallActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:274
+-keep class com.lanxiao.doapp.activity.VoiceCallActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:113
+-keep class com.lanxiao.doapp.activity.WebActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:446
+-keep class com.lanxiao.doapp.activity.WorkWebActivity { <init>(...); }
+
+# view res/layout/arc_menu.xml #generated:4
+-keep class com.lanxiao.doapp.capricorn.AutoArcLayout { <init>(...); }
+
+# view res/layout/activity_video_call.xml #generated:40
+# view res/layout/activity_voice_call.xml #generated:31
+-keep class com.lanxiao.doapp.chatui.applib.chatuimain.domain.MyChronometer { <init>(...); }
+
+# view res/layout/choose_griditem.xml #generated:12
+-keep class com.lanxiao.doapp.chatui.applib.chatuimain.domain.RecyclingImageView { <init>(...); }
+
+# view AndroidManifest.xml #generated:377
+-keep class com.lanxiao.doapp.chatui.applib.chatuimain.receiver.GCMPushBroadCast { <init>(...); }
+
+# view res/layout/em_contacts_header.xml #generated:15
+# view res/layout/em_contacts_header.xml #generated:22
+# view res/layout/em_contacts_header.xml #generated:8
+-keep class com.lanxiao.doapp.chatui.applib.chatuimain.utils.ContactItemView { <init>(...); }
+
+# view AndroidManifest.xml #generated:65
+-keep class com.lanxiao.doapp.chatui.applib.chatuimain.utils.DemoApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:211
+-keep class com.lanxiao.doapp.framment.ExitGroupDialog { <init>(...); }
+
+# view AndroidManifest.xml #generated:654
+-keep class com.lanxiao.doapp.framment.Frament_workappion { <init>(...); }
+
+# view res/layout/listviewfordoingrecycleview.xml #generated:13
+-keep class com.lanxiao.doapp.myView.AutoLoadRecyclerView { <init>(...); }
+
+# view res/layout/circleprogressbar.xml #generated:10
+# view res/layout/feed_activity2.xml #generated:431
+# view res/layout/listviewfordoing.xml #generated:25
+# view res/layout/listviewfordoingrecycleview.xml #generated:18
+-keep class com.lanxiao.doapp.myView.CircleProgressBar { <init>(...); }
+
+# view res/layout/activity_person_userinfo.xml #generated:58
+# view res/layout/activity_user_profile.xml #generated:48
+# view res/layout/frament_setting.xml #generated:56
+# view res/layout/frament_userinfo.xml #generated:35
+# view res/layout/listitemforcontant.xml #generated:37
+# view res/layout/singin_log_person_item.xml #generated:10
+-keep class com.lanxiao.doapp.myView.CircularImage { <init>(...); }
+
+# view res/layout/frament_friend.xml #generated:101
+-keep class com.lanxiao.doapp.myView.DefinedScrollView { <init>(...); }
+
+# view res/layout/frament_workappion.xml #generated:8
+-keep class com.lanxiao.doapp.myView.DoappTitleBar { <init>(...); }
+
+# view res/layout/activity_image_pager.xml #generated:8
+-keep class com.lanxiao.doapp.myView.HackyViewPager { <init>(...); }
+
+# view res/layout/framenttwo_applay.xml #generated:122
+# view res/layout/framenttwo_applay.xml #generated:131
+# view res/layout/framenttwo_applay.xml #generated:141
+-keep class com.lanxiao.doapp.myView.ListViewForScrollView { <init>(...); }
+
+# view res/layout/activity_person_userinfo.xml #generated:114
+# view res/layout/activity_person_userinfo.xml #generated:124
+# view res/layout/activity_person_userinfo.xml #generated:134
+# view res/layout/activity_person_userinfo.xml #generated:144
+# view res/layout/activity_person_userinfo.xml #generated:154
+# view res/layout/activity_person_userinfo.xml #generated:164
+# view res/layout/activity_person_userinfo.xml #generated:174
+# view res/layout/activity_person_userinfo.xml #generated:184
+# view res/layout/activity_person_userinfo.xml #generated:194
+# view res/layout/activity_person_userinfo.xml #generated:204
+# view res/layout/activity_person_userinfo.xml #generated:214
+# view res/layout/activity_safe_set.xml #generated:37
+# view res/layout/activity_unit_userinfo.xml #generated:109
+# view res/layout/activity_unit_userinfo.xml #generated:120
+# view res/layout/activity_unit_userinfo.xml #generated:131
+# view res/layout/activity_unit_userinfo.xml #generated:142
+# view res/layout/activity_unit_userinfo.xml #generated:153
+# view res/layout/activity_unit_userinfo.xml #generated:164
+# view res/layout/activity_unit_userinfo.xml #generated:175
+# view res/layout/activity_unit_userinfo.xml #generated:185
+# view res/layout/activity_unit_userinfo.xml #generated:54
+# view res/layout/activity_unit_userinfo.xml #generated:65
+# view res/layout/activity_unit_userinfo.xml #generated:76
+# view res/layout/activity_unit_userinfo.xml #generated:87
+# view res/layout/activity_unit_userinfo.xml #generated:98
+# view res/layout/frament_setting.xml #generated:265
+# view res/layout/frament_setting.xml #generated:275
+# view res/layout/frament_setting.xml #generated:285
+# view res/layout/frament_setting.xml #generated:295
+# view res/layout/frament_setting.xml #generated:305
+# view res/layout/frament_setting.xml #generated:315
+# view res/layout/frament_setting.xml #generated:325
+-keep class com.lanxiao.doapp.myView.MainSetItemView { <init>(...); }
+
+# view res/layout/do_team_header.xml #generated:13
+# view res/layout/do_team_header.xml #generated:8
+# view res/layout/do_unit_header.xml #generated:13
+# view res/layout/do_unit_header.xml #generated:8
+-keep class com.lanxiao.doapp.myView.MainUnittemView { <init>(...); }
+
+# view res/layout/listitemforattentionforall.xml #generated:89
+-keep class com.lanxiao.doapp.myView.NewTextView { <init>(...); }
+
+# view res/layout/do_type_bmob.xml #generated:28
+# view res/layout/listitemforattention.xml #generated:147
+# view res/layout/listitemforattention_forbmob.xml #generated:134
+# view res/layout/listitemforattention_forsearch.xml #generated:133
+# view res/layout/listitemforattentionforall.xml #generated:143
+-keep class com.lanxiao.doapp.myView.NineGridImageView { <init>(...); }
+
+# view res/layout/card_swiped_std_card_inner.xml #generated:12
+# view res/layout/do_type_search.xml #generated:20
+# view res/layout/feed_comments_item.xml #generated:84
+# view res/layout/listitemforattention.xml #generated:29
+# view res/layout/listitemforattention_forbmob.xml #generated:31
+# view res/layout/listitemforattention_forsearch.xml #generated:31
+# view res/layout/listitemforattentionforall.xml #generated:33
+-keep class com.lanxiao.doapp.myView.RoundedCornersImage { <init>(...); }
+
+# view res/layout/locatponeactivity.xml #generated:109
+-keep class com.lanxiao.doapp.myView.SegmentView { <init>(...); }
+
+# view res/layout/activity_user_profile.xml #generated:266
+# view res/layout/activity_user_profile.xml #generated:278
+# view res/layout/activity_user_profile.xml #generated:288
+# view res/layout/activity_user_profile.xml #generated:343
+-keep class com.lanxiao.doapp.myView.UserInfoItemView { <init>(...); }
+
+# view AndroidManifest.xml #generated:536
+-keep class com.lanxiao.doapp.receivrer.MyJPushReceiver { <init>(...); }
+
+# view res/layout/feed_activity2.xml #generated:157
+-keep class com.lanxiao.doapp.widget.PasteEditText { <init>(...); }
+
+# view res/layout/activity_capture.xml #generated:16
+-keep class com.lanxiao.doapp.zxing.view.ViewfinderView { <init>(...); }
+
+# view res/layout/card_swiped_std_card_inner.xml #generated:2
+# view res/layout/frame_function.xml #generated:2
+-keep class com.zhy.autolayout.AutoRelativeLayout { <init>(...); }
+
+# view res/layout/listitemforattention.xml #generated:2
+# view res/layout/listitemforattention_forbmob.xml #generated:2
+# view res/layout/listitemforattention_forsearch.xml #generated:2
+# view res/layout/listitemforattentionforall.xml #generated:2
+-keep class com.zhy.autolayout.widget.AutoCardView { <init>(...); }
+
+# view res/layout/activity_main.xml #generated:29
+# view res/layout/activity_post_info.xml #generated:90
+# view res/layout/activity_sign_in.xml #generated:167
+-keep class com.zhy.autolayout.widget.AutoRadioGroup { <init>(...); }
+
+# onClick res/layout/listitemforaddcontact.xml #generated:33
+-keepclassmembers class * { *** addContact(...); }
+
+# onClick res/layout/activity_group_simle_details.xml #generated:125
+-keepclassmembers class * { *** addToGroup(...); }
+
+# onClick res/layout/activity_edit.xml #generated:13
+# onClick res/layout/activity_group_blacklist.xml #generated:14
+# onClick res/layout/activity_group_details.xml #generated:13
+# onClick res/layout/activity_group_pick_contacts.xml #generated:14
+# onClick res/layout/activity_meeting_web.xml #generated:19
+# onClick res/layout/activity_new_group.xml #generated:14
+# onClick res/layout/activity_person_userinfo.xml #generated:15
+# onClick res/layout/activity_post_info.xml #generated:14
+# onClick res/layout/activity_show_contant.xml #generated:13
+# onClick res/layout/activity_team_info.xml #generated:15
+# onClick res/layout/activity_team_sum.xml #generated:14
+# onClick res/layout/activity_tongshi__contnet.xml #generated:13
+# onClick res/layout/activity_unit_userinfo.xml #generated:15
+# onClick res/layout/ease_commom_back_btn.xml #generated:2
+# onClick res/layout/em_activity_group_details.xml #generated:14
+# onClick res/layout/frament_setting.xml #generated:15
+# onClick res/layout/input_activity.xml #generated:33
+-keepclassmembers class * { *** back(...); }
+
+# onClick res/layout/logout_actionsheet.xml #generated:41
+-keepclassmembers class * { *** cancel(...); }
+
+# onClick res/layout/em_context_menu_for_text.xml #generated:10
+-keepclassmembers class * { *** copy(...); }
+
+# onClick res/layout/em_context_menu_for_image.xml #generated:28
+# onClick res/layout/em_context_menu_for_location.xml #generated:10
+# onClick res/layout/em_context_menu_for_text.xml #generated:28
+# onClick res/layout/em_context_menu_for_video.xml #generated:16
+# onClick res/layout/em_context_menu_for_voice.xml #generated:16
+-keepclassmembers class * { *** delete(...); }
+
+# onClick res/layout/feed_activity2.xml #generated:157
+-keepclassmembers class * { *** editClick(...); }
+
+# onClick res/layout/activity_public_groups_search.xml #generated:55
+-keepclassmembers class * { *** enterToDetails(...); }
+
+# onClick res/layout/activity_group_details.xml #generated:293
+# onClick res/layout/em_activity_group_details.xml #generated:319
+-keepclassmembers class * { *** exitDeleteGroup(...); }
+
+# onClick res/layout/activity_group_details.xml #generated:280
+# onClick res/layout/em_activity_group_details.xml #generated:306
+-keepclassmembers class * { *** exitGroup(...); }
+
+# onClick res/layout/em_context_menu_for_image.xml #generated:45
+# onClick res/layout/em_context_menu_for_text.xml #generated:44
+-keepclassmembers class * { *** forward(...); }
+
+# onClick res/layout/activity_register_page2.xml #generated:95
+-keepclassmembers class * { *** isfinish(...); }
+
+# onClick res/layout/activity_login.xml #generated:117
+-keepclassmembers class * { *** login(...); }
+
+# onClick res/layout/frament_setting.xml #generated:99
+# onClick res/layout/logout_actionsheet.xml #generated:26
+-keepclassmembers class * { *** logout(...); }
+
+# onClick res/layout/activity_post_info.xml #generated:176
+# onClick res/layout/activity_register.xml #generated:137
+-keepclassmembers class * { *** next(...); }
+
+# onClick res/layout/feed_activity2.xml #generated:207
+# onClick res/layout/feed_activity2.xml #generated:283
+# onClick res/layout/feed_activity2.xml #generated:315
+# onClick res/layout/feed_activity2.xml #generated:346
+# onClick res/layout/feed_activity2.xml #generated:378
+-keepclassmembers class * { *** onClick(...); }
+
+# onClick res/layout/activity_edit.xml #generated:37
+# onClick res/layout/activity_group_pick_contacts.xml #generated:37
+# onClick res/layout/activity_meeting_do.xml #generated:290
+# onClick res/layout/activity_new_group.xml #generated:37
+# onClick res/layout/activity_register_createunit.xml #generated:96
+# onClick res/layout/activity_sign_in.xml #generated:199
+-keepclassmembers class * { *** save(...); }
+
+# onClick res/layout/activity_public_groups.xml #generated:33
+-keepclassmembers class * { *** search(...); }
+
+# onClick res/layout/activity_public_groups_search.xml #generated:26
+-keepclassmembers class * { *** searchGroup(...); }
+
+# onClick res/layout/ease_activity_baidumap.xml #generated:28
+-keepclassmembers class * { *** sendLocation(...); }
+
+# onClick res/layout/feed_activity2.xml #generated:116
+-keepclassmembers class * { *** setModeKeyboard(...); }
+
+# onClick res/layout/feed_activity2.xml #generated:107
+-keepclassmembers class * { *** setModeVoice(...); }
+
+# onClick res/layout/activity_black_list.xml #generated:44
+-keepclassmembers class * { *** toGroupDetails(...); }
+
+# onClick res/layout/activity_current_location.xml #generated:142
+-keepclassmembers class * { *** true(...); }
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="180px"
+    android:background="#FFFFFF"
+    android:gravity="center_vertical" >
+
+    <RelativeLayout
+        android:id="@+id/left_layout"
+        android:layout_width="150px"
+        android:layout_height="match_parent"
+        android:background="@drawable/ease_common_tab_bg"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/left_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/main_kuang"
+        android:textSize="60px" />
+    <ImageView
+        android:id="@+id/middle_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+    <RelativeLayout
+        android:id="@+id/right_layout"
+        android:layout_width="150px"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ease_common_tab_bg" >
+
+        <ImageView
+            android:id="@+id/right_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/Thinkpad/Desktop/takepic/MyApplication/easeUI/src/main/res/layout/ease_widget_title_bar.xml --><!-- From: file:/C:/Users/Thinkpad/Desktop/takepic/MyApplication/easeUI/build/intermediates/bundles/debug/res/layout/ease_widget_title_bar.xml -->
